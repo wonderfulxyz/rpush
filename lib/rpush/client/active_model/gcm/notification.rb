@@ -45,7 +45,7 @@ module Rpush
             json['content_available'] = content_available if content_available
             json['dry_run'] = dry_run if dry_run
             json['notification'] = notification if notification
-            json['priority'] = priority_for_notification if priority
+            json['priority'] = 'high'
             json['time_to_live'] = expiry if expiry
             json
           end
